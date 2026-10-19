@@ -1,20 +1,18 @@
-# Portail Discord Entreprises — FiveM RP
+# Refonte Entreprises RP — GitHub Pages
 
-Version uniquement orientée Discord : pas de formulaire de candidature en ligne, pas de backend Node.js, pas d'intégration directe au serveur FiveM. Le but est de présenter les services et d'envoyer les visiteurs vers votre Discord pour candidater via vos salons ou tickets.
+Cette version reprend l'esprit de la capture envoyée : fond violet/rose, barre de navigation sombre arrondie, grille de cartes d'entreprises et visuels stylisés pour chaque établissement. Elle est responsive (ordinateur et mobile) et propose des filtres.
 
-## Installer
+## Publier la mise à jour sur GitHub
+
 1. Décompressez l'archive.
-2. Ouvrez `app.js` et remplacez `https://discord.gg/REMPLACE_MOI` par le lien d'invitation de votre Discord.
-3. Ouvrez `index.html` dans un navigateur pour tester.
-4. Pour le mettre en ligne, envoyez `index.html`, `styles.css` et `app.js` à votre hébergement web (par exemple dans `public_html`).
+2. Ouvrez le dépôt GitHub `Entrepriserp`.
+3. Cliquez sur **Add file → Upload files**.
+4. Envoyez `index.html`, `styles.css` et `app.js` à la racine du dépôt.
+5. Acceptez **Commit changes** et choisissez de remplacer les fichiers existants.
+6. Patientez quelques minutes puis actualisez `https://jesko2707.github.io/Entrepriserp/`.
 
-## Personnaliser
-Dans `index.html`, modifiez les cartes Police, Justice, EMS et Gouvernement selon les services de votre serveur. Vous pouvez remplacer les textes et ajouter des cartes en dupliquant un bloc `<article class="card">`.
+## Ajouter votre invitation Discord
 
-## Recrutement sur Discord
-Créez sur votre serveur Discord une catégorie privée par service et des salons de candidature ou tickets. Configurez les permissions des rôles afin que chaque candidat ne voie que son ticket et que les recruteurs concernés puissent y accéder. Le site redirige les joueurs vers Discord ; il ne crée pas automatiquement les salons ou les rôles.
+Dans `app.js`, remplacez `https://discord.gg/REMPLACE_MOI` par votre lien d'invitation Discord. Enregistrez ensuite le fichier sur GitHub.
 
-## Conseils
-- Utilisez une invitation Discord permanente ou mettez à jour le lien quand elle expire.
-- Servez le site en HTTPS.
-- Ne mettez aucun token de bot ou webhook dans `app.js`.
+Les bannières sont conçues en CSS : aucun hébergeur d'images externe n'est nécessaire. Les polices Google Fonts nécessitent une connexion internet, mais le site reste lisible si elles ne chargent pas.
