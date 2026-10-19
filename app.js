@@ -1,5 +1,5 @@
-// Remplace cette adresse par le lien d'invitation de ton serveur Discord.
-const DISCORD_INVITE = "https://discord.gg/REMPLACE_MOI";
+u// Remplace cette adresse par le lien d'invitation de ton serveur Discord.
+const DISCORD_INVITE = "https://discord.gg/resurrectionrp";
 
 document.getElementById("year").textContent = new Date().getFullYear();
 ["loginLink", "joinLink"].forEach(id => {
